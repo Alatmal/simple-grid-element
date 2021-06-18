@@ -131,3 +131,43 @@ body{
 footer {
     margin-top: 80px;
 }
+
+@media (min-width:1000px) {
+    .card{
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 'header header' 'content content';
+        justify-content: center;
+        margin: 40px 300px;
+    }
+    .intro-element {
+        grid-area: header;
+        padding: 25px 60px 20px 30px;
+    }
+
+    .intro-element p, h2{
+        font-size: 1.1em;
+    }
+
+    .price-element{
+        border-radius: 0 0 0 5px;
+        padding: 25px 60px 20px 30px;
+    }
+    .price-element p{
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .last-element{
+        border-radius: 0 0 5px 0;
+        padding: 25px 20px 20px 30px;
+    }
+
+    .points {
+        font-size: 1.1em;
+        margin-top: 10px;
+        line-height: 1.6em;
+    }
+
+    .last-element button{
+        border: none;
+    }
+}
