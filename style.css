@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*font-family: 'Karla', sans-serif;*/
+:root{
+    /*Primary*/
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+
+*,*::after,*::before, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    color: rgb(20, 19, 19);
+    background-color: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+}
+
+.card p{
+    font-size: 0.9rem;
+}
+
+.card{
+    height: 600px;
+    margin: 50px 30px 40px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    justify-content: center;
+}
+
+.intro-element{
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    color: rgb(155, 155, 155);
+    text-align: left;
+    padding: 25px 20px 25px 20px;
+}
+
+.intro-element p{
+    line-height: 1.5em;
+}
+
+.intro-element h2{
+    color: var(--cyan);
+    font-size: 1.2em;
+}
+
+.middle-paragraph{
+    color: var(--bright-yellow);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.price-element{
+    background-color: var(--cyan);
+    text-align: left;
+    padding: 25px 20px 25px 20px;
+    color: white;
+}
+
+.price-element h3{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.price{
+    position: relative;
+}
+
+.month{
+    font-size: 1em;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 12px;
+    font-weight: 200;
+    color: rgb(238, 238, 238);
+    opacity: 0.7;
+}
+
+.price-element button{
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: var(--bright-yellow);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    box-shadow: 0px 10px 12px -10px rgb(73, 73, 73);
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.price-element button:hover{
+    color: var(--bright-yellow);
+    background-color: white;
+}
+
+.amount {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.last-element{
+    background-color: hsl(179, 47%, 52%);
+    border-radius: 0 0 5px 5px;
+    text-align: left;
+    padding: 15px 20px 15px 20px;
+    color: rgb(243, 243, 243);
+    font-size: 1em;
+}
+.last-element h3{
+    margin-bottom: 10px;
+}
+.points p{
+    font-size: 0.9em;
+    margin-right: 80px;
+    margin-bottom: 1px;
+    text-align:left;
+    line-height: 1.2em;
+    opacity: 0.8;
+}
+
+footer {
+    margin-top: 80px;
+}
